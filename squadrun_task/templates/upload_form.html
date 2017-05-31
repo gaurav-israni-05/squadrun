@@ -33,10 +33,10 @@
 
     <form method="post" enctype="multipart/form-data" >
     {% csrf_token %}
-    <div class="line"><span>Enter the image of url:</span> <input type="text" name ='single_image_url' id="single_image_url"></div>
-    <div class="line"><span>Upload a txt file of image url's: </span><input type="file" name="txt_file"></div>
-    <div class="line"><span>Upload a xls/csv file of image url's: </span><input type="file" name="xls_file"></div>
-    <div class="line"><span>Upload an image: </span><input type="file" name="physical_image"></div>
+    <div class="line"><span>Enter the image of url:</span> <input type="text" name ='single_image_url' id="single_image_url"><input type='text' name="single_image_quality" style="margin-left:75px"></div>
+    <div class="line"><span>Upload a txt file of image url's: </span><input type="file" name="txt_file">&nbsp<input type='text' name="txt_file_quality"></div>
+    <div class="line"><span>Upload a xls/csv file of image url's: </span><input type="file" name="xls_file">&nbsp<input type='text' name="xls_file_quality"></div>
+    <div class="line"><span>Upload an image: </span><input type="file" name="physical_image">&nbsp<input type='text' name="physical_image_quality"></div>
     <div align="center" class="upload_btn"><button type="submit">Upload</button></div>
     </form>
     <p>{{error}}</p>
