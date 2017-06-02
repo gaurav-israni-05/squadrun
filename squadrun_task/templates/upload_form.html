@@ -51,8 +51,9 @@
 
         <h3><u>Compressed Images</u></h3>
     {% for image in compressed_images%}
-    <img src="{{image}}"><br>
+    <img src="{{image.url}}"><br>
    {% endfor %}
+
     </div>
     {% endif %}
 {% endblock %}

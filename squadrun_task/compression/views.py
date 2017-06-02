@@ -1,3 +1,5 @@
+import imghdr
+import os
 from django.shortcuts import render
 from rest_framework.views import View,APIView
 import urllib.request
@@ -46,6 +48,9 @@ class Index(View):
             image_list_original = []
             image_list_compressed = []
             image_list_original_written = []
+            opener = urllib.request.build_opener()
+            opener.addheaders = [('User-Agent','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1941.0 Safari/537.36')]
+            urllib.request.install_opener(opener)
             error = ""
             # Parsing the image list returned from serializer
             for image_data in image_url_list:
@@ -59,19 +64,24 @@ class Index(View):
                 try:
                     if not image_data['type'] == compression_constants.UPLOADED_TYPE['physical']:
                         urllib.request.urlretrieve(url, image_path+image_name)
-                    image_list_original.append(image_name)
-                    compress_response = compression_utils.compress_image(image_path=image_path, image_name=image_name,
-                                                                         quality=image_data['quality'])
-                    if compress_response.get('status'):
-                        cloudinary_response = compression_utils.store_to_cloudinary(compress_response.get('compressed_image_path'))
-                        if cloudinary_response.get('status'):
-                            image_list_original_written.append({'url':image_data['url'],'message':
-                                                                compression_constants.UPLOADED_TYPE_MESSAGE[image_data['type']]})
-                            image_list_compressed.append(cloudinary_response['cloudinary_response'].get('url'))
-                        else:
-                            error += cloudinary_response.get('error')+'\n'
+                    if not imghdr.what(image_path+image_name):
+                        error += "There was no image found at the ur"+url
                     else:
-                        error += compress_response.get('error')
+                        image_list_original.append(image_name)
+                        compress_response = compression_utils.compress_image(image_path=image_path, image_name=image_name,
+                                                                             quality=image_data['quality'])
+                        if compress_response.get('status'):
+                            cloudinary_response = compression_utils.store_to_cloudinary(compress_response.get('compressed_image_path'))
+                            if cloudinary_response.get('status'):
+                                image_list_original_written.append({'url': image_data['url'],'message':
+                                                                    compression_constants.UPLOADED_TYPE_MESSAGE[image_data['type']],
+                                                                    'size': (os.stat(image_path+image_name).st_size/1024)})
+                                image_list_compressed.append({'url': cloudinary_response['cloudinary_response'].get('url'),
+                                                              'size': (os.stat(compress_response.get('compressed_image_path')).st_size/1024)})
+                            else:
+                                error += cloudinary_response.get('error')+'\n'
+                        else:
+                            error += compress_response.get('error')
                 except urllib.request.URLError:
                     error += 'There was no image found at'+url +'\n'
             compression_utils.map_to_original(image_list_original_written,image_list_compressed)

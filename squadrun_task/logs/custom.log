@@ -1,0 +1,199 @@
+2017-06-02 04:50:09,461 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 04:51:20,902 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 04:53:04,418 [ERROR] django.request: Internal Server Error: /compression/index/
+Traceback (most recent call last):
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kuliza-342/Desktop/squadrun/squadrun_task/compression/views.py", line 67, in post
+    quality=image_data['quality'])
+  File "/home/kuliza-342/Desktop/squadrun/squadrun_task/compression/utils.py", line 41, in compress_image
+    if image_name.split('.')[1] == 'gif':
+IndexError: list index out of range
+2017-06-02 05:03:40,293 [ERROR] django.request: Internal Server Error: /compression/index/
+Traceback (most recent call last):
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kuliza-342/Desktop/squadrun/squadrun_task/compression/views.py", line 71, in post
+    quality=image_data['quality'])
+  File "/home/kuliza-342/Desktop/squadrun/squadrun_task/compression/utils.py", line 40, in compress_image
+    if not quality:
+IndexError: list index out of range
+2017-06-02 05:03:46,213 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 09:42:21,073 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 09:43:21,046 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 09:44:21,043 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 09:45:21,042 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 09:46:21,045 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 09:47:21,042 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 09:48:21,049 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 09:49:21,041 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:13:45,915 [WARNING] django.request: Not Found: /
+2017-06-02 13:14:14,734 [ERROR] django.request: Internal Server Error: /compression/index/
+Traceback (most recent call last):
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/kuliza-342/Desktop/squadrun/squadrun_task/compression/views.py", line 70, in post
+    print(os.stat(image_name+image_path).st_size)
+FileNotFoundError: [Errno 2] No such file or directory: '41qJGxrMW0L._SL500_AA300_.jpg/home/kuliza-342/Desktop/squadrun/squadrun_task/static/'
+2017-06-02 13:14:21,043 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:15:21,040 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:16:21,043 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:41:21,045 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:42:21,041 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:43:21,041 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:44:21,041 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:45:21,043 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:45:49,662 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:45:50,506 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:46:21,042 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:47:19,739 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:47:20,651 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:47:21,042 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:48:21,045 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:49:04,413 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:49:05,309 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:49:21,044 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:49:58,221 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:49:59,266 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:50:21,049 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:50:36,761 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:50:37,468 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:51:21,048 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:51:38,928 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:51:39,726 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:52:21,041 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:52:24,086 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:52:24,783 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:53:21,044 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:53:38,478 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:53:39,291 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:54:21,045 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:55:21,042 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 13:55:41,815 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 13:55:43,022 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:37:40,801 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:38:40,800 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:39:40,803 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:40:40,800 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:41:23,533 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:41:24,440 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:41:40,806 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:42:32,448 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:42:33,432 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:42:40,800 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:43:40,801 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:44:28,875 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:44:32,860 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:44:33,744 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:44:36,256 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:44:37,059 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:44:40,805 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:45:40,802 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:46:40,801 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:47:40,800 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:48:40,802 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:49:40,800 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:50:40,800 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:51:05,725 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:51:40,805 [WARNING] django.request: Not Found: /api/stream/get-notification-message-count/
+2017-06-02 15:52:06,704 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:52:07,583 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:52:17,365 [WARNING] django.request: Not Found: /mapping.xls
+2017-06-02 15:54:37,039 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:54:38,365 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:54:39,411 [WARNING] django.request: Not Found: /mapping.xls
+2017-06-02 15:56:08,617 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:56:09,551 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 15:56:10,529 [WARNING] django.request: Not Found: /manage.py
