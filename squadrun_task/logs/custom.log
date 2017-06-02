@@ -197,3 +197,12 @@ FileNotFoundError: [Errno 2] No such file or directory: '41qJGxrMW0L._SL500_AA30
   InsecureRequestWarning)
 
 2017-06-02 15:56:10,529 [WARNING] django.request: Not Found: /manage.py
+2017-06-02 16:03:44,360 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 16:03:45,275 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
+2017-06-02 16:03:47,057 [WARNING] py.warnings: /home/kuliza-342/Desktop/squadrun-env/lib/python3.5/site-packages/urllib3/connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+
